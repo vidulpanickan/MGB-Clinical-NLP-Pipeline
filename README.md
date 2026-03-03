@@ -1,6 +1,6 @@
-# NILE Clinical NLP Pipeline Implementation Guide
+# Clinical NLP Pipeline  Guide
 
-This documentation provides the standard operating procedure for implementing the **NILE** (Note Identification & Logging Engine) framework for clinical entity extraction.
+This documentation provides a pipeline for running the **NILE** for clinical entity extraction.
 
 ---
 
