@@ -41,6 +41,7 @@ From your cluster login node, run:
 sbatch extract_from_nile_output.sbatch
 # or
 sbatch extract_biobank_notes.sbatch
+```
 
-## 3. Check logs  
+## 3. Check Logs
    SLURM logs (`slurm-*.out` / `slurm-*.err`) and the extraction log inside your `OUTPUT_DIR` (e.g. `extraction_progress.log`) will show progress and any errors.
