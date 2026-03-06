@@ -1,6 +1,6 @@
-# Medical/Biobank Data ETL Processor
+# Creating Research Ready NLP datasets
 
-A Python-based ETL (Extract, Transform, Load) script that processes batches of medical or biobank data. It takes raw patient records containing clinical codes, cleans the data, calculates code frequency per patient on daily and monthly bases, and maps codes to broader parent categories for a summarized rollup view.
+Script that  takes raw patient records containing clinical codes, cleans the data, calculates code frequency per patient on daily and monthly bases, and maps codes to broader parent categories for a summarized rollup view.
 
 ---
 
@@ -31,8 +31,8 @@ A Python-based ETL (Extract, Transform, Load) script that processes batches of m
 
 | Output File | Description |
 |---|---|
-| `rollup_daily_batch_<N>.csv` | One record per patient per parent category per day |
-| `rollup_month_batch_<N>.csv` | Count of days per month a patient triggered each parent category |
+| `rollup_daily_batch_<N>.csv` | One record per patient per CUI per day (duplicates removed) |
+| `rollup_month_batch_<N>.csv` | Count of distinct days per month a patient had each CUI  |
 
 ### 5. Logging and Error Handling
 
@@ -44,7 +44,7 @@ A Python-based ETL (Extract, Transform, Load) script that processes batches of m
 ## Usage
 
 ```bash
-python etl_processor.py --batch 29
+python processor.py --batch 29
 ```
 
 ### Arguments
