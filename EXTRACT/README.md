@@ -13,7 +13,7 @@ This folder contains small SLURM jobs for extracting notes for a given set of pa
   - `OUT_FILE`: output file where matched rows will be saved
 
   Input files should:
-  - match the file type the script is searching for
+  - match the file type the script is searching for (Currently *.txt)
   - use `|` as the separator
   - have the patient ID in the first column
 
