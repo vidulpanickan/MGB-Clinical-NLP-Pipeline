@@ -1,6 +1,6 @@
 # Note/NILE Output Extraction Jobs
 
-This folder contains small SLURM jobs for extracting notes for a given set of patients.
+This folder contains scripts for both extracting notes and nlp output for a given set of patients.
 
 ## Files
 
