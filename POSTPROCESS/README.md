@@ -44,7 +44,7 @@ Script that  takes raw patient records containing clinical codes, cleans the dat
 ## Usage
 
 ```bash
-python processor.py --batch 29
+python generated_counts_rollup.py --batch 29
 ```
 
 ### Arguments
