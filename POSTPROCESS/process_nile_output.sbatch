@@ -19,7 +19,7 @@ conda activate nlp
 INPUT_DIR="/data/vbio-methodsdev/SHARE/BIOBANK/2025/WORK/meta/BATCHED_DATA"
 OUTPUT_ROOT="/data/vbio-methodsdev/SHARE/BIOBANK/2025/WORK/NEW_PROCESS/OUTPUT_27JAN2026"
 
-python3 rollup_biobank.py \
+python3 generated_counts_rollup.py \
   --batch "${SLURM_ARRAY_TASK_ID}" \
   --input-dir "${INPUT_DIR}" \
   --output-root "${OUTPUT_ROOT}"
